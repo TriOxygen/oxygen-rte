@@ -7,18 +7,20 @@ import {
   RichUtils
 } from 'draft-js';
 import getDefaultKeyBinding from 'draft-js/lib/getDefaultKeyBinding';
-import changeBlockDepth from 'lib/changeBlockDepth';
-import changeBlockType from 'lib/changeBlockType';
-import insertBlockAfter from 'lib/insertBlockAfter';
-import isListItem from 'lib/isListItem';
 import isSoftNewlineEvent from 'draft-js/lib/isSoftNewlineEvent';
-import EditorToolbar from 'components/Toolbar';
-import EditorValue from 'lib/EditorValue';
-import LinkDecorator from 'lib/LinkDecorator';
 import classNames from 'classnames';
 import { EventEmitter } from 'events';
 import { BLOCK_TYPE } from 'draft-js-utils';
-import { Theme, Units } from 'Styles';
+
+import EditorToolbar from './components/Toolbar';
+import changeBlockDepth from './lib/changeBlockDepth';
+import changeBlockType from './lib/changeBlockType';
+import insertBlockAfter from './lib/insertBlockAfter';
+import isListItem from './lib/isListItem';
+import EditorValue from './lib/EditorValue';
+import LinkDecorator from './lib/LinkDecorator';
+
+import { Theme, Units } from './Styles';
 
 
 const MAX_LIST_DEPTH = 2;

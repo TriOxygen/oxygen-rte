@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import IconButton from './IconButton';
 import ButtonGroup from './ButtonGroup';
 import classNames from 'classnames';
-import { Units } from 'Styles';
+import { Units } from '../Styles';
 
 const css = oxygenCss({
   root: {

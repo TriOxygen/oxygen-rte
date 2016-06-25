@@ -26,23 +26,23 @@ const css = oxygenCss({
   }
 });
 
-import Bold from 'icons/Bold';
-import Italic from 'icons/Italic';
-import Strikethrough from 'icons/Strikethrough';
-import Code from 'icons/Code';
+import Bold from '../icons/Bold';
+import Italic from '../icons/Italic';
+import Strikethrough from '../icons/Strikethrough';
+import Code from '../icons/Code';
 
-import ListUl from 'icons/ListUl';
-import ListOl from 'icons/ListOl';
-import QuoteLeft from 'icons/QuoteLeft';
+import ListUl from '../icons/ListUl';
+import ListOl from '../icons/ListOl';
+import QuoteLeft from '../icons/QuoteLeft';
 
-import Link from 'icons/Link';
-import ChainBroken from 'icons/ChainBroken';
+import Link from '../icons/Link';
+import ChainBroken from '../icons/ChainBroken';
 
-import Undo from 'icons/Undo';
-import Repeat from 'icons/Repeat';
+import Undo from '../icons/Undo';
+import Repeat from '../icons/Repeat';
 
-import Check from 'icons/Check';
-import Times from 'icons/Times';
+import Check from '../icons/Check';
+import Times from '../icons/Times';
 
 const Icons = {
   bold: Bold,

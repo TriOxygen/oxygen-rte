@@ -19,10 +19,10 @@ import StyleButton from './StyleButton';
 import PopoverIconButton from './PopoverIconButton';
 import ButtonGroup from './ButtonGroup';
 import IconButton from './IconButton';
-import getEntityAtCursor from 'lib/getEntityAtCursor';
-import clearEntityForRange from 'lib/clearEntityForRange';
+import getEntityAtCursor from '../lib/getEntityAtCursor';
+import clearEntityForRange from '../lib/clearEntityForRange';
 import classNames from 'classnames';
-import { Units } from 'Styles';
+import { Units } from '../Styles';
 
 const css = oxygenCss({
   root: {
