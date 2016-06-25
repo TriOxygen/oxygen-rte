@@ -1,0 +1,17 @@
+{
+  "presets":  ["es2015", "react", "stage-0"],
+  "plugins":  [
+    ["oxygen-css", {
+      "vendorPrefixes": true,
+      "prefix": "ort",
+      "compressClassNames": true,
+      "bundleFile": "dist/bundle.css",
+      "context": "./lib/Styles/index.js",
+      "mediaMap": {
+        "phone": "media only screen and (max-width: 767px)",
+        "tablet": "media only screen and (min-width: 768px) and (max-width: 959px)",
+        "desktop": "media only screen and (min-width: 960px)"
+      }
+    }]
+    ]
+}

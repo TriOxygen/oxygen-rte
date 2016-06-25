@@ -1,0 +1,70 @@
+{
+  "name": "oxygen-rte",
+  "version": "1.0.0",
+  "description": "Rich Text Editor using Draft.js",
+  "main": "lib/index.js",
+  "scripts": {
+    "start": "BABEL_DISABLE_CACHE=1 NODE_ENV=development NODE_PATH=$NODE_PATH:./src node --harmony server.js",
+    "buildStyles": "babel ./src/Styles --out-dir ./lib/Styles",
+    "build": "npm run buildStyles &&  babel ./src --out-dir ./lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TriOxygen/oxygen-rte.git"
+  },
+  "bugs": {
+    "url": "https://github.com/TriOxygen/oxygen-rte/issues"
+  },
+  "homepage": "https://github.com/TriOxygen/oxygen-rte#readme",
+  "engines": {
+    "node": ">=0.12"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.7.7",
+    "babel-core": "^6.7.7",
+    "babel-eslint": "^6.0.4",
+    "babel-loader": "^6.2.4",
+    "babel-preset-es2015": "^6.3.13",
+    "babel-preset-react": "^6.3.13",
+    "babel-preset-stage-0": "^6.5.0",
+    "babel-preset-stage-1": "^6.3.13",
+    "babel-runtime": "^6.5.0",
+    "css-loader": "^0.23.1",
+    "eslint": "^2.9.0",
+    "eslint-plugin-react": "^5.2.2",
+    "react-dom": "^15.0.1",
+    "react-hot-loader": "^1.3.0",
+    "react-tap-event-plugin": "^1.0.0",
+    "style-loader": "^0.13.1",
+    "webpack": "^1.13.0",
+    "webpack-dev-server": "^1.14.1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "babel-cli": "^6.5.0",
+    "babel-core": "^6.5.0",
+    "babel-generator": "^6.7.7",
+    "babel-plugin-oxygen-css": "git@github.com:TriOxygen/babel-plugin-oxygen-css.git",
+    "babel-plugin-transform-async-functions": "^6.5.0",
+    "babel-plugin-transform-async-to-generator": "^6.5.0",
+    "babel-plugin-transform-class-properties": "^6.5.0",
+    "babel-plugin-transform-export-extensions": "^6.5.0",
+    "babel-plugin-transform-object-rest-spread": "^6.5.0",
+    "babel-preset-es2015": "^6.5.0",
+    "babel-preset-react": "^6.5.0",
+    "babel-preset-stage-0": "^6.5.0",
+    "babel-runtime": "^6.6.1",
+    "classnames": "^2.2.3",
+    "draft-js": "^0.7.0",
+    "draft-js-export-html": "^0.3.0",
+    "draft-js-export-markdown": "^0.2.0",
+    "draft-js-import-html": "^0.1.10",
+    "draft-js-import-markdown": "^0.1.6",
+    "draft-js-utils": "^0.1.5",
+    "exenv": "^1.2.1",
+    "react": "^15.1.0",
+    "react-addons-shallow-compare": "^15.1.0",
+    "react-motion": "^0.4.3",
+  }
+}

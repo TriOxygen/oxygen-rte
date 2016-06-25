@@ -1,0 +1,137 @@
+body {
+  font-size: 14px;
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Product Sans', Arial, sans-serif;
+  font-weight: 400;
+}
+html {
+  font-size: 14px;
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Product Sans', Arial, sans-serif;
+  font-weight: 400;
+}
+.ort_a {
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  top: 0px;
+  padding: 12px;
+}
+.ort_b {
+  position: relative;
+  border: solid 1px #DDD;
+  border-radius: 2px;
+}
+.ort_c {
+  padding: 4px;
+}
+.ort_q {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  background-color: #f2f2f2;
+  border-style: none none solid none;
+  border-width: 1px;
+  border-color: #DDD;
+}
+.ort_e {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  margin: 4px;
+  white-space: nowrap;
+  background-color: #FFF;
+  border-radius: 2px;
+  box-shadow: 0 1px 6px rgba(0,0,0,0.12), 0 1px 4px rgba(0,0,0,0.12);
+}
+.ort_e:last-child {
+  margin-right: 0px;
+}
+.ort_f {
+  cursor: pointer;
+  position: relative;
+  background: none;
+  border: none;
+  min-width: 32px;
+  min-height: 24px;
+  color: #777;
+  line-height: 24px;
+  font-size: 16px;
+}
+.ort_f.ort_g {
+  color: #333;
+  background: none #CCC;
+}
+.ort_f:hover {
+  background-color: #DDD;
+}
+.ort_l {
+  position: absolute;
+  left: 0px;
+  top: 36px;
+  background-color: #fdfdfd;
+  border-radius: 2px;
+  border: solid 1px #CCCCCC;
+  box-shadow: 0 1px 6px rgba(0,0,0,0.12), 0 1px 4px rgba(0,0,0,0.12);
+}
+.ort_l:before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 0px;
+  height: 0px;
+  top: -10px;
+  left: 10px;
+  border: 5px solid transparent;
+  border-bottom-color: #CCCCCC;
+}
+.ort_l:after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 0px;
+  height: 0px;
+  top: -9px;
+  left: 10px;
+  border: 5px solid transparent;
+  border-bottom-color: #fdfdfd;
+}
+.ort_m {
+}
+.ort_n {
+  padding: 4px;
+}
+.ort_o {
+  font-size: 14px;
+  line-height: 24px;
+  outline: none;
+  border: none;
+}
+.ort_k {
+  position: relative;
+}
+.ort_h {
+  position: relative;
+  display: inline-block;
+  z-index: 10;
+}
+.ort_i {
+  display: inline-block;
+  height: 16px;
+  width: 16px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  -webkit-transition: cubic-bezier(0.23, 1, 0.32, 1);
+  transition: cubic-bezier(0.23, 1, 0.32, 1);
+  vertical-align: middle;
+  fill: currentColor;
+}
+.ort_j {
+  display: block;
+}
