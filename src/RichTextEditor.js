@@ -1,6 +1,5 @@
 import React, { PropTypes, Component } from 'react';
 import {
-  CompositeDecorator,
   Editor,
   EditorState,
   Modifier,
@@ -17,8 +16,8 @@ import changeBlockDepth from './lib/changeBlockDepth';
 import changeBlockType from './lib/changeBlockType';
 import insertBlockAfter from './lib/insertBlockAfter';
 import isListItem from './lib/isListItem';
-import EditorValue from './lib/EditorValue';
-import LinkDecorator from './lib/LinkDecorator';
+
+
 
 import { Theme, Units } from './Styles';
 
@@ -276,16 +275,5 @@ const getBlockStyle = (block) => {
   }
 };
 
-export const decorator = new CompositeDecorator([LinkDecorator]);
-
-export const createEmptyValue = () => {
-  return EditorValue.createEmpty(decorator);
-};
-
-export const createValueFromString = (markup, format) => {
-  return EditorValue.createFromString(markup, format, decorator);
-};
-
-export EditorValue from './lib/EditorValue';
 export default RichTextEditor;
 
