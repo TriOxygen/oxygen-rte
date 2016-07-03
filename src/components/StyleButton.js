@@ -8,7 +8,7 @@ export default class StyleButton extends Component {
   };
 
   render() {
-    const { style, ...otherProps } = this.props;
+    const { style, onToggle, ...otherProps } = this.props;
     const iconName = style.toLowerCase();
     // `focusOnClick` will prevent the editor from losing focus when a control
     // button is clicked.

@@ -4,25 +4,21 @@ import InputPopover from './InputPopover';
 
 export default class PopoverIconButton extends Component {
   static propTypes= {
-    iconName: PropTypes.string,
     showPopover: PropTypes.bool,
     onTogglePopover: PropTypes.func,
     onSubmit: PropTypes.func
   };
 
   render() {
-    const { props } = this;
+    const { showPopover, onTogglePopover, onSubmit, ...otherProps } = this.props;
     return (
-      <IconButton {...props} onClick={this.props.onTogglePopover}>
-        {this._renderPopover()}
+      <IconButton {...otherProps} onClick={this.props.onTogglePopover}>
+        {showPopover && this._renderPopover()}
       </IconButton>
     );
   }
 
   _renderPopover() {
-    if (!this.props.showPopover) {
-      return null;
-    }
     return (
       <InputPopover
         onSubmit={this._onSubmit}
